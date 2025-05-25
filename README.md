@@ -100,16 +100,15 @@ The Jaffle Shop Pipeline is a comprehensive data ingestion and analytics solutio
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd jaffle-shop-pipeline
+git clone [<repository-url>](https://github.com/samuel-aka-viana/dlt-jaffle-shop.git)
+cd dlt-jaffle-shop
 
 # Create virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
-pip install dlt[duckdb]
-pip install requests
+run pip install -r requirements.txt
 ```
 
 ## 📖 Usage
@@ -118,7 +117,7 @@ pip install requests
 
 ```python
 # Run the complete pipeline
-python jaffle_shop_pipeline.py
+python main.py
 ```
 
 ### Advanced Usage
